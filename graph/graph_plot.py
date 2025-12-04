@@ -21,11 +21,11 @@ def plot_comp_effort_graph(csv_file, jpg_file, title):
             b5_effort.append(float(row[8]))
             b10_effort.append(float(row[10]))
 
-    plt.plot(quantities, avl_effort, label='Árvore AVL')
-    plt.plot(quantities, red_black_effort, label='Árvore Rubro-Negra')
-    plt.plot(quantities, b1_effort, label='Árvore B (ordem 1)')
-    plt.plot(quantities, b5_effort, label='Árvore B (ordem 5)')
-    plt.plot(quantities, b10_effort, label='Árvore B (ordem 10)')
+    plt.plot(quantities, avl_effort, label='Árvore AVL', color='purple')
+    plt.plot(quantities, red_black_effort, label='Árvore Rubro-Negra', color='green')
+    plt.plot(quantities, b1_effort, label='Árvore B (ordem 1)', color='blue')
+    plt.plot(quantities, b5_effort, label='Árvore B (ordem 5)', color='red')
+    plt.plot(quantities, b10_effort, label='Árvore B (ordem 10)', color='orange')
 
     plt.xlabel('Quantidade')
     plt.yscale("log")
@@ -54,11 +54,11 @@ def plot_time_graph(csv_file, jpg_file, title):
             b5_times.append(float(row[7]))
             b10_times.append(float(row[9]))
 
-    plt.plot(quantities, avl_times, label='Árvore AVL')
-    plt.plot(quantities, red_black_times, label='Árvore Rubro-Negra')
-    plt.plot(quantities, b1_times, label='Árvore B (ordem 1)')
-    plt.plot(quantities, b5_times, label='Árvore B (ordem 5)')
-    plt.plot(quantities, b10_times, label='Árvore B (ordem 10)')
+    plt.plot(quantities, avl_times, label='Árvore AVL', color='purple')
+    plt.plot(quantities, red_black_times, label='Árvore Rubro-Negra', color='green')
+    plt.plot(quantities, b1_times, label='Árvore B (ordem 1)', color='blue')
+    plt.plot(quantities, b5_times, label='Árvore B (ordem 5)', color='red')
+    plt.plot(quantities, b10_times, label='Árvore B (ordem 10)', color='orange')
 
     plt.xlabel('Quantidade')
     plt.ylabel('Tempo (ms)')
